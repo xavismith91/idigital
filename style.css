@@ -113,7 +113,7 @@
         .tarjeta {
             width: 200px;
             height: 300px;
-            perspective: 1000px;
+            /* perspective: 1000px; */
             margin-right: 3cm; /* Agregar espacio de 3 cm entre las tarjetas */
             position: relative;
             transform-style: preserve-3d;
