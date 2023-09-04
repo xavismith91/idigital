@@ -1,0 +1,170 @@
+
+        /* Estilos generales */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            
+        }
+
+        /* Estilos para el menú */
+        .menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: transparent;
+            transition: background-color 0.3s ease;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            color: white;
+        }
+
+        /* Estilos para los enlaces del menú */
+        .menu a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .menu a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilos para el botón de llamada */
+        .llamar-btn {
+            background-color: turquoise;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Estilos para el logo */
+        .logo img {
+            max-width: 100px;
+            height: auto;
+        }
+
+        /* Estilos para los botones de redes sociales */
+        .redes-sociales a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+        }
+
+        /* Estilos para el contenido de la página */
+        .content {
+            height: 1500px; /* Altura de contenido de ejemplo */
+        }
+
+        /* Estilos para el menú con fondo negro */
+        .menu-scrolled {
+            background-color: #050121;
+        }
+
+        /* Reglas de diseño responsivo */
+        @media (max-width: 768px) {
+            .menu {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .menu a {
+                margin: 10px 0;
+            }
+
+            .redes-sociales {
+                margin-top: 20px;
+            }
+        }
+    
+
+
+       
+
+/*  targeteros */
+
+    .cuerpocontenedor {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+
+    }       
+
+     .contenedor {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url("fondo.jpg"); /* Cambia "fondo.jpg" por la imagen que desees */
+            background-size: cover;
+        }
+        
+        .tarjeta {
+            width: 200px;
+            height: 300px;
+            perspective: 1000px;
+            margin-right: 3cm; /* Agregar espacio de 3 cm entre las tarjetas */
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.5s;
+        }
+        
+        .cara,
+        .trasera {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+        
+        .trasera {
+            transform: rotateY(180deg);
+        }
+        
+        .tarjeta:hover {
+            transform: rotateY(180deg);
+        }
+
+
+        /* botones  tarjetero*/
+        
+        .boton-redondeado {
+            background-color: #3498db;
+            border: none;
+            border-radius: 25px; /* Ajusta este valor para hacer el botón más o menos redondeado */
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Efecto de sombreado */
+            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .boton-redondeado:hover {
+            background-color: #2980b9; /* Cambia el color al hacer hover */
+            transform: translateY(-2px); /* Efecto de elevación al hacer hover */
+            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* Efecto de sombreado al hacer hover */
+        }
+        
